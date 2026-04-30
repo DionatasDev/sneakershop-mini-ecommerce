@@ -1,2 +1,20 @@
-# sneakershop-mini-ecommerce
-Mini e-commerce funcional desenvolvido com HTML, CSS e JavaScript puro, com sistema de carrinho, manipulação de DOM e cálculo dinâmico de total.
+# SneakerShop — Mini E-commerce
+
+Mini e-commerce funcional criado para praticar manipulação de DOM, eventos e lógica com JavaScript puro.
+
+## Tecnologias
+
+- HTML5
+- CSS3
+- JavaScript
+
+## Funcionalidades
+
+- Listagem dinâmica de produtos
+- Sistema de carrinho lateral
+- Cálculo automático do valor total
+- Manipulação de elementos na tela em tempo real
+
+## Preview
+
+Simulação de loja virtual com carrinho interativo.
