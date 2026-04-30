@@ -1,0 +1,53 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  display:flex;
+  padding:30px;
+}
+
+h1{
+  position:fixed;
+  top:10px;
+  left:30px;
+}
+
+.grid{
+  margin-top:80px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+  width:70%;
+}
+
+.card{
+  border-radius:8px;
+  padding:20px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.1);
+  text-align:center;
+}
+
+button{
+  margin-top:15px;
+  padding:10px;
+  background:#111;
+  color:#fff;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+#carrinho{
+  position:fixed;
+  right:0;
+  top:0;
+  width:280px;
+  height:100vh;
+  background:#f1f5f9;
+  padding:20px;
+  border-left:1px solid #ccc;
+}

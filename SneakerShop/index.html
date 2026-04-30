@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SneakerShop</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>SneakerShop</h1>
+<div class="grid" id="produtos"></div>
+
+<div id="carrinho">
+<h3>Carrinho</h3>
+<ul id="lista"></ul>
+<p>Total: R$ <span id="total">0</span></p>
+</div>
+
+<script>
+const produtos=[
+ {nome:'Tênis A',preco:199},
+ {nome:'Tênis B',preco:249},
+ {nome:'Tênis C',preco:299}
+];
+let total=0;
+
+function render(){
+ const container=document.getElementById('produtos');
+ produtos.forEach(p=>{
+  container.innerHTML+=`<div class='card'>
+    <h3>${p.nome}</h3>
+    <p>R$ ${p.preco}</p>
+    <button onclick="add('${p.nome}',${p.preco})">Adicionar</button>
+  </div>`;
+ });
+}
+
+function add(nome,preco){
+ total+=preco;
+ document.getElementById('total').innerText=total;
+ document.getElementById('lista').innerHTML+=`<li>${nome}</li>`;
+}
+
+render();
+</script>
+</body>
+</html>
